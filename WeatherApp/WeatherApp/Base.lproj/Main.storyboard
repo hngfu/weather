@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="309" y="20"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="5oB-Ix-U10">
             <objects>
-                <viewController id="Kuh-NO-aby" sceneMemberID="viewController">
+                <viewController id="Kuh-NO-aby" customClass="SearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GOC-f2-yEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
