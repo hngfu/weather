@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WC-JO-IC1">
+                                <rect key="frame" x="71" y="348" width="287" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="가자 디지몬 세계로">
+                                    <color key="titleColor" red="0.04984227762" green="1" blue="0.0036117137140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Kuh-NO-aby" kind="presentation" id="3Wu-bv-Vde"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="309" y="20"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5oB-Ix-U10">
+            <objects>
+                <viewController id="Kuh-NO-aby" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GOC-f2-yEc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="태일아 진화시켜줘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-Rd-A9s">
+                                <rect key="frame" x="100" y="350" width="215" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hPk-dA-wyJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="AsV-tJ-ciG" id="Qv2-ya-sfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="6fy-gY-sGg">
+                    <connections>
+                        <outlet property="delegate" destination="Kuh-NO-aby" id="w0l-Tm-2H2"/>
+                        <outlet property="searchContentsController" destination="Kuh-NO-aby" id="ZHy-7M-0LC"/>
+                        <outlet property="searchResultsDataSource" destination="Kuh-NO-aby" id="ZGZ-lc-uGy"/>
+                        <outlet property="searchResultsDelegate" destination="Kuh-NO-aby" id="UWS-hw-U8h"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="AsV-tJ-ciG">
+                    <connections>
+                        <outlet property="delegate" destination="Kuh-NO-aby" id="dHb-Z6-tWP"/>
+                        <outlet property="searchContentsController" destination="Kuh-NO-aby" id="Zdt-9S-A3B"/>
+                        <outlet property="searchResultsDataSource" destination="Kuh-NO-aby" id="3Mn-Xz-Dfd"/>
+                        <outlet property="searchResultsDelegate" destination="Kuh-NO-aby" id="Qma-v3-75j"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1077" y="20"/>
         </scene>
     </scenes>
 </document>
