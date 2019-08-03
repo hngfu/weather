@@ -26,7 +26,7 @@
                                     <color key="titleColor" red="0.04984227762" green="1" blue="0.0036117137140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kuh-NO-aby" kind="presentation" id="3Wu-bv-Vde"/>
+                                    <segue destination="PBm-qG-PaF" kind="presentation" id="3Wu-bv-Vde"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +41,7 @@
         <!--Search View Controller-->
         <scene sceneID="5oB-Ix-U10">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Kuh-NO-aby" customClass="SearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GOC-f2-yEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -57,29 +58,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hPk-dA-wyJ"/>
                     </view>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="AsV-tJ-ciG" id="Qv2-ya-sfR"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="bfz-TC-5Lf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="6fy-gY-sGg">
-                    <connections>
-                        <outlet property="delegate" destination="Kuh-NO-aby" id="w0l-Tm-2H2"/>
-                        <outlet property="searchContentsController" destination="Kuh-NO-aby" id="ZHy-7M-0LC"/>
-                        <outlet property="searchResultsDataSource" destination="Kuh-NO-aby" id="ZGZ-lc-uGy"/>
-                        <outlet property="searchResultsDelegate" destination="Kuh-NO-aby" id="UWS-hw-U8h"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="AsV-tJ-ciG">
-                    <connections>
-                        <outlet property="delegate" destination="Kuh-NO-aby" id="dHb-Z6-tWP"/>
-                        <outlet property="searchContentsController" destination="Kuh-NO-aby" id="Zdt-9S-A3B"/>
-                        <outlet property="searchResultsDataSource" destination="Kuh-NO-aby" id="3Mn-Xz-Dfd"/>
-                        <outlet property="searchResultsDelegate" destination="Kuh-NO-aby" id="Qma-v3-75j"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1077" y="20"/>
+            <point key="canvasLocation" x="1903" y="20"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="24d-Qm-gEM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PBm-qG-PaF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3yB-N5-neK">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kuh-NO-aby" kind="relationship" relationship="rootViewController" id="agi-oC-aER"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gk-xt-j2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="19.565217391304348"/>
         </scene>
     </scenes>
 </document>
