@@ -42,13 +42,7 @@
         <scene sceneID="5oB-Ix-U10">
             <objects>
                 <viewController id="Kuh-NO-aby" customClass="SearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GOC-f2-yEc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hPk-dA-wyJ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bfz-TC-5Lf"/>
+                    <navigationItem key="navigationItem" prompt="도시, 우편번호 또는 공항 위치 입력" id="bfz-TC-5Lf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

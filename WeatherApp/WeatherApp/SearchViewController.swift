@@ -12,8 +12,6 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let searchHelp = "도시, 우편번호 또는 공항 위치 입력"
-        self.navigationItem.prompt = searchHelp
         let searchBar = LocationSearchBar()
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
