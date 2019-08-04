@@ -1,5 +1,5 @@
 //
-//  LocationSearchBar.swift
+//  CitySearchBar.swift
 //  WeatherApp
 //
 //  Created by 조재흥 on 04/08/2019.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LocationSearchBar: UISearchBar {
-    
+class CitySearchBar: UISearchBar {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

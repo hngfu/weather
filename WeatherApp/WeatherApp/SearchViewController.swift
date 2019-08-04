@@ -10,17 +10,17 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    @IBOutlet weak var searchResultTableView: UITableView!
+    @IBOutlet weak var CityTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLocationSearchBar()
-        searchResultTableView.dataSource = self
-        searchResultTableView.delegate = self
+        setCitySearchBar()
+        CityTableView.dataSource = self
+        CityTableView.delegate = self
     }
     
-    private func setLocationSearchBar() {
-        let searchBar = LocationSearchBar()
+    private func setCitySearchBar() {
+        let searchBar = CitySearchBar()
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
         searchBar.becomeFirstResponder()
@@ -40,7 +40,7 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "searchResultTableViewCell"
+        let cellIdentifier = "cityTableViewCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
                                                  for: indexPath)
         return cell
