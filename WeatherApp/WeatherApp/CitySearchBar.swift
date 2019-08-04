@@ -21,12 +21,17 @@ class CitySearchBar: UISearchBar {
     }
     
     private func commonInit() {
-        self.searchBarStyle = .minimal
-        self.barStyle = .black
+        if let textField = self.value(forKey: "searchField") as? UITextField {
+            textField.textColor = .white
+            let color = UIColor.lightGray.withAlphaComponent(0.05)
+            textField.backgroundColor = color
+        }
+        
         self.showsCancelButton = true
+        self.tintColor = .white
+        
         self.keyboardAppearance = .dark
         self.returnKeyType = .search
         self.autocapitalizationType = .words
-        self.tintColor = .white
     }
 }
