@@ -9,23 +9,21 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
-    private var searchBar: LocationSearchBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let searchHelp = "도시, 우편번호 또는 공항 위치 입력"
         self.navigationItem.prompt = searchHelp
-        self.searchBar = LocationSearchBar()
-        self.searchBar.delegate = self
+        let searchBar = LocationSearchBar()
+        searchBar.delegate = self
         self.navigationItem.titleView = searchBar
-        self.searchBar.becomeFirstResponder()
+        searchBar.becomeFirstResponder()
     }
 }
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.searchBar.resignFirstResponder()
+        searchBar.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
 }
