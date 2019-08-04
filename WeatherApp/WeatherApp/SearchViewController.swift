@@ -12,6 +12,10 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLocationSearchBar()
+    }
+    
+    private func setLocationSearchBar() {
         let searchBar = LocationSearchBar()
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
