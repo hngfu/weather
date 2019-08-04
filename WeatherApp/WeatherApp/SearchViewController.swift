@@ -22,6 +22,7 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.navigationItem.titleView?.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
 }
