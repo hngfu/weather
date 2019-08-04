@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D537E9A22F718BA00EA9F53 /* CitySearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9922F718BA00EA9F53 /* CitySearchBar.swift */; };
+		7D537E9C22F71C4000EA9F53 /* CityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9B22F71C4000EA9F53 /* CityManager.swift */; };
 		7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE526322F5779A005C802A /* AppDelegate.swift */; };
 		7DEE526622F5779A005C802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE526522F5779A005C802A /* ViewController.swift */; };
 		7DEE526922F5779A005C802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE526722F5779A005C802A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7D537E9922F718BA00EA9F53 /* CitySearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchBar.swift; sourceTree = "<group>"; };
+		7D537E9B22F71C4000EA9F53 /* CityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityManager.swift; sourceTree = "<group>"; };
 		7DEE526022F5779A005C802A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEE526322F5779A005C802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DEE526522F5779A005C802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				7DEE526322F5779A005C802A /* AppDelegate.swift */,
 				7DEE526522F5779A005C802A /* ViewController.swift */,
 				7DEE527522F5C0B4005C802A /* SearchViewController.swift */,
+				7D537E9B22F71C4000EA9F53 /* CityManager.swift */,
 				7D537E9922F718BA00EA9F53 /* CitySearchBar.swift */,
 				7DEE526722F5779A005C802A /* Main.storyboard */,
 				7DEE526A22F5779B005C802A /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				7D537E9A22F718BA00EA9F53 /* CitySearchBar.swift in Sources */,
 				7DEE527622F5C0B4005C802A /* SearchViewController.swift in Sources */,
+				7D537E9C22F71C4000EA9F53 /* CityManager.swift in Sources */,
 				7DEE526622F5779A005C802A /* ViewController.swift in Sources */,
 				7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */,
 			);
