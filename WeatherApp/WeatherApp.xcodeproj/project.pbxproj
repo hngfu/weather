@@ -51,37 +51,37 @@
 			isa = PBXGroup;
 			children = (
 				7D1689A522F7DB49008287FF /* Search.storyboard */,
-				7D1689AA22F7DB97008287FF /* Controller */,
-				7D1689A922F7DB8B008287FF /* Model */,
-				7D1689A822F7DB7C008287FF /* View */,
+				7D1689AA22F7DB97008287FF /* Controllers */,
+				7D1689A922F7DB8B008287FF /* Models */,
+				7D1689A822F7DB7C008287FF /* Views */,
 			);
 			path = Search;
 			sourceTree = "<group>";
 		};
-		7D1689A822F7DB7C008287FF /* View */ = {
+		7D1689A822F7DB7C008287FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */,
 				7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */,
 				7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		7D1689A922F7DB8B008287FF /* Model */ = {
+		7D1689A922F7DB8B008287FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7D537E9B22F71C4000EA9F53 /* LocalManager.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		7D1689AA22F7DB97008287FF /* Controller */ = {
+		7D1689AA22F7DB97008287FF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				7DEE527522F5C0B4005C802A /* SearchViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		7DEE525722F5779A005C802A = {
