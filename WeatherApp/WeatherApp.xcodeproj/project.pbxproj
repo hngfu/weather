@@ -107,8 +107,8 @@
 			children = (
 				7DEE526322F5779A005C802A /* AppDelegate.swift */,
 				7DEE526722F5779A005C802A /* Main.storyboard */,
-				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
 				7DEE526522F5779A005C802A /* ViewController.swift */,
+				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
 				7D16897D22F7D51D008287FF /* Search */,
 				7DEE526A22F5779B005C802A /* Assets.xcassets */,
 				7DEE526C22F5779B005C802A /* LaunchScreen.storyboard */,
