@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct LocalManager {
+class LocalManager {
     
+    func count() -> Int {
+        return 0
+    }
 }

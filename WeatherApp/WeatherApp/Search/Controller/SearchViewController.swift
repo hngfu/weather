@@ -9,9 +9,16 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
+    //MARK: - Properties
+    //MARK: IBOutlet
     @IBOutlet weak var localTableView: UITableView!
     
+    //MARK: Model
+    private let localManager = LocalManager()
+    
+    //MARK: - Methods
+    //MARK: Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocalSearchBar()
@@ -38,7 +45,7 @@ extension SearchViewController: UISearchBarDelegate {
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return localManager.count()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
