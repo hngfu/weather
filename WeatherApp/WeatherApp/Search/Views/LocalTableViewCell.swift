@@ -30,4 +30,10 @@ class LocalTableViewCell: UITableViewCell {
 
     }
     
+    func showHandler() -> (String?) -> Void {
+        let show = { (text: String?) -> Void in
+            self.localInfoLabel.text = text
+        }
+        return show
+    }
 }
