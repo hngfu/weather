@@ -41,6 +41,10 @@ extension SearchViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        localManager.search(with: searchBar.text)
+    }
 }
 
 extension SearchViewController: UITableViewDataSource {
