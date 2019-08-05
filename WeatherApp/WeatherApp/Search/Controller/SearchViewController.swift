@@ -10,17 +10,17 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    @IBOutlet weak var CityTableView: UITableView!
+    @IBOutlet weak var localTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setCitySearchBar()
-        CityTableView.dataSource = self
-        CityTableView.delegate = self
+        setLocalSearchBar()
+        localTableView.dataSource = self
+        localTableView.delegate = self
     }
     
-    private func setCitySearchBar() {
-        let searchBar = CitySearchBar()
+    private func setLocalSearchBar() {
+        let searchBar = LocalSearchBar()
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
         searchBar.becomeFirstResponder()

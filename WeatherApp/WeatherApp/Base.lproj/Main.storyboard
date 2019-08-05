@@ -26,7 +26,7 @@
                                     <color key="titleColor" red="0.04984227762" green="1" blue="0.0036117137140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PBm-qG-PaF" kind="presentation" id="3Wu-bv-Vde"/>
+                                    <segue destination="Oic-Mo-83g" kind="presentation" id="3Wu-bv-Vde"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,69 +38,13 @@
             </objects>
             <point key="canvasLocation" x="309" y="20"/>
         </scene>
-        <!--Search View Controller-->
-        <scene sceneID="5oB-Ix-U10">
+        <!--Search-->
+        <scene sceneID="n8P-pU-yYP">
             <objects>
-                <viewController id="Kuh-NO-aby" customClass="SearchViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="KhZ-0f-6Cs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UJp-vp-ggy">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-tg-bOE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <prototypes>
-                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityTableViewCell" id="HyE-In-J7a">
-                                            <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HyE-In-J7a" id="y3m-en-RPG">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </tableViewCellContentView>
-                                        </tableViewCell>
-                                    </prototypes>
-                                </tableView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="BMK-tg-bOE" secondAttribute="trailing" id="A55-Ei-vN3"/>
-                                <constraint firstItem="BMK-tg-bOE" firstAttribute="leading" secondItem="UJp-vp-ggy" secondAttribute="leading" id="DFo-7q-WrE"/>
-                                <constraint firstItem="BMK-tg-bOE" firstAttribute="top" secondItem="UJp-vp-ggy" secondAttribute="top" id="Gyn-hu-4og"/>
-                                <constraint firstAttribute="bottom" secondItem="BMK-tg-bOE" secondAttribute="bottom" id="uvu-9K-HM3"/>
-                            </constraints>
-                        </view>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <blurEffect style="dark"/>
-                    </visualEffectView>
-                    <navigationItem key="navigationItem" prompt="도시, 우편번호 또는 공항 위치 입력" id="bfz-TC-5Lf"/>
-                    <connections>
-                        <outlet property="CityTableView" destination="BMK-tg-bOE" id="AXA-mu-kYI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Search" id="Oic-Mo-83g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqh-z2-CcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="20"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="24d-Qm-gEM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overCurrentContext" id="PBm-qG-PaF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="oPq-LV-7v3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="3yB-N5-neK">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Kuh-NO-aby" kind="relationship" relationship="rootViewController" id="agi-oC-aER"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4gk-xt-j2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1107" y="20"/>
+            <point key="canvasLocation" x="967" y="20"/>
         </scene>
     </scenes>
 </document>

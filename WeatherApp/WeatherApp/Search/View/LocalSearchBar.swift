@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CitySearchBar: UISearchBar {
+class LocalSearchBar: UISearchBar {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
