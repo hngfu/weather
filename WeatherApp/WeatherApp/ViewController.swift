@@ -10,18 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - Properties
+    //MARK: IBOutlet
     @IBOutlet weak var weatherTableView: UITableView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    //MARK: - Methods
+    //MARK: Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         weatherTableView.dataSource = self
         weatherTableView.delegate = self
     }
     
+    //MARK: IBAction
     @IBAction func touchUpAddButton(_ sender: UIButton) {
         sender.isSelected.toggle()
     }

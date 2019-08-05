@@ -39,17 +39,17 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-6J-Ovn">
-                                            <rect key="frame" x="12" y="10" width="42" height="32"/>
+                                            <rect key="frame" x="12" y="10" width="51" height="32"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal">
                                                 <attributedString key="attributedTitle">
-                                                    <fragment content="°C">
+                                                    <fragment content="°C ">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="17" name=".SFNSText"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="/°F">
+                                                    <fragment content="/ °F">
                                                         <attributes>
                                                             <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="17" name=".SFNSText"/>
@@ -59,7 +59,7 @@
                                             </state>
                                             <state key="selected">
                                                 <attributedString key="attributedTitle">
-                                                    <fragment content="°C/">
+                                                    <fragment content="°C / ">
                                                         <attributes>
                                                             <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" size="17" name=".SFNSText"/>
