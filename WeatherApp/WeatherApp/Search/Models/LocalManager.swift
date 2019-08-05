@@ -10,7 +10,12 @@ import Foundation
 
 class LocalManager {
     
+    //MARK: - Methods
     func count() -> Int {
         return 0
+    }
+    
+    func perform(with handler: (String) -> Void, from index: Int) {
+        
     }
 }
