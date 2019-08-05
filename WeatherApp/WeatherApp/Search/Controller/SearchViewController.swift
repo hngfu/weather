@@ -17,6 +17,8 @@ class SearchViewController: UIViewController {
         setLocalSearchBar()
         localTableView.dataSource = self
         localTableView.delegate = self
+        localTableView.register(UINib(nibName: LocalTableViewCell.nibName, bundle: nil),
+                                forCellReuseIdentifier: LocalTableViewCell.identifier)
     }
     
     private func setLocalSearchBar() {
@@ -40,10 +42,11 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "cityTableViewCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
+        let cell = tableView.dequeueReusableCell(withIdentifier: LocalTableViewCell.identifier,
                                                  for: indexPath)
-        return cell
+        guard let localTableViewCell = cell as? LocalTableViewCell else { return cell }
+        
+        return localTableViewCell
     }
     
     
