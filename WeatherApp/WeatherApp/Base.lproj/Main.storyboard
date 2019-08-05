@@ -24,13 +24,21 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="supercool_kakaopay" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Qb-LRS">
                                 <rect key="frame" x="107.66666666666667" y="570.66666666666663" width="198.66666666666663" height="36"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5za-Y1-CUl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.50492294520547942" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="l8G-Qb-LRS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5S0-le-nVq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5za-Y1-CUl" secondAttribute="trailing" id="GQc-Js-tLU"/>
                             <constraint firstItem="2Y7-lq-afN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NsW-er-CpD"/>
+                            <constraint firstItem="5za-Y1-CUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W9U-aw-dr7"/>
                             <constraint firstItem="l8G-Qb-LRS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="YfP-xI-2IC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5za-Y1-CUl" secondAttribute="bottom" id="hgw-X3-H27"/>
                             <constraint firstItem="2Y7-lq-afN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="k7P-dm-ANW"/>
+                            <constraint firstItem="5za-Y1-CUl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lqe-V4-PkS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
@@ -42,6 +50,9 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="weatherTableView" destination="5za-Y1-CUl" id="qmH-sV-TMM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
