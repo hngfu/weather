@@ -52,11 +52,10 @@ extension SearchViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: LocalTableViewCell.identifier,
                                                  for: indexPath)
         guard let localTableViewCell = cell as? LocalTableViewCell else { return cell }
-        
+        localManager.perform(with: localTableViewCell.showHandler(),
+                             from: indexPath.row)
         return localTableViewCell
     }
-    
-    
 }
 
 extension SearchViewController: UITableViewDelegate {
