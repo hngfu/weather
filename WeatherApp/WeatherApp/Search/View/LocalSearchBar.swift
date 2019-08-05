@@ -9,7 +9,9 @@
 import UIKit
 
 class LocalSearchBar: UISearchBar {
-
+    
+    //MARK: - Methods
+    //MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
