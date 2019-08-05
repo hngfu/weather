@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7D1689A722F7DB49008287FF /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1689A522F7DB49008287FF /* Search.storyboard */; };
+		7D1689AD22F7E3B5008287FF /* LocalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */; };
+		7D1689AE22F7E3B5008287FF /* LocalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */; };
 		7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */; };
 		7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9B22F71C4000EA9F53 /* LocalManager.swift */; };
 		7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE526322F5779A005C802A /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		7D1689A622F7DB49008287FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WeatherApp/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTableViewCell.swift; sourceTree = "<group>"; };
+		7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalTableViewCell.xib; sourceTree = "<group>"; };
 		7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchBar.swift; sourceTree = "<group>"; };
 		7D537E9B22F71C4000EA9F53 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 		7DEE526022F5779A005C802A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */,
+				7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */,
+				7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			files = (
 				7DEE526E22F5779B005C802A /* LaunchScreen.storyboard in Resources */,
 				7DEE526B22F5779B005C802A /* Assets.xcassets in Resources */,
+				7D1689AE22F7E3B5008287FF /* LocalTableViewCell.xib in Resources */,
 				7D1689A722F7DB49008287FF /* Search.storyboard in Resources */,
 				7DEE526922F5779A005C802A /* Main.storyboard in Resources */,
 			);
@@ -185,6 +192,7 @@
 				7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */,
 				7DEE526622F5779A005C802A /* ViewController.swift in Sources */,
 				7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */,
+				7D1689AD22F7E3B5008287FF /* LocalTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
