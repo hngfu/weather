@@ -32,6 +32,11 @@ class LocalManager {
                 let response = response else { return }
 
             self.mapItems = response.mapItems
+            NotificationCenter.default.post(name: .mapItemDidChanged, object: self)
         }
     }
+}
+
+extension Notification.Name {
+    static let mapItemDidChanged = NSNotification.Name("mapItemDidChanged")
 }

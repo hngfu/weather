@@ -26,6 +26,11 @@ class SearchViewController: UIViewController {
         localTableView.delegate = self
         localTableView.register(UINib(nibName: LocalTableViewCell.nibName, bundle: nil),
                                 forCellReuseIdentifier: LocalTableViewCell.identifier)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(reloadTableView),
+                                               name: .mapItemDidChanged,
+                                               object: localManager)
     }
     
     private func setLocalSearchBar() {
@@ -33,6 +38,10 @@ class SearchViewController: UIViewController {
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar
         searchBar.becomeFirstResponder()
+    }
+    
+    @objc private func reloadTableView(_ noti: Notification) {
+        self.localTableView.reloadData()
     }
 }
 
