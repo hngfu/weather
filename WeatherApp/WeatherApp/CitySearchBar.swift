@@ -26,6 +26,7 @@ class CitySearchBar: UISearchBar {
             let color = UIColor.lightGray.withAlphaComponent(0.05)
             textField.backgroundColor = color
         }
+        self.setValue("취소", forKey: "cancelButtonText")
         
         self.showsCancelButton = true
         self.tintColor = .white
