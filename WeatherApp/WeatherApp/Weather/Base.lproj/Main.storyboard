@@ -123,7 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="weatherTableView" destination="5za-Y1-CUl" id="qmH-sV-TMM"/>
-                        <segue destination="zsf-ea-5y1" kind="show" id="GHK-Hk-Vww"/>
+                        <segue destination="zsf-ea-5y1" kind="show" identifier="segueToDetailWeatherVC" id="GHK-Hk-Vww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

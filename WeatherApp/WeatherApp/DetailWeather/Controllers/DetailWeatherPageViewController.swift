@@ -12,6 +12,22 @@ class DetailWeatherPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dataSource = self
+        self.delegate = self
 
     }
+}
+
+extension DetailWeatherPageViewController: UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        return nil
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        return nil
+    }
+}
+
+extension DetailWeatherPageViewController: UIPageViewControllerDelegate {
+    
 }
