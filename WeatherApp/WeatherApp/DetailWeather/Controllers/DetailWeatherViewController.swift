@@ -9,7 +9,10 @@
 import UIKit
 
 class DetailWeatherViewController: UIViewController {
-
+    
+    @IBOutlet weak var pageVCContainerView: UIView!
+    @IBOutlet weak var pageVCPageControl: SmallDotPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +20,7 @@ class DetailWeatherViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func touchUpCloseButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
 }

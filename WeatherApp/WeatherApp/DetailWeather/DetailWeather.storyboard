@@ -31,6 +31,9 @@
                                         <rect key="frame" x="381" y="8" width="21" height="24"/>
                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="weather-list"/>
+                                        <connections>
+                                            <action selector="touchUpCloseButton:" destination="eZc-AL-zzy" eventType="touchUpInside" id="i1W-ac-mzC"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hngfu" translatesAutoresizingMaskIntoConstraints="NO" id="ONI-BH-wWq">
                                         <rect key="frame" x="12" y="8" width="45" height="24"/>
@@ -70,6 +73,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kFY-9Q-XqG"/>
                     </view>
+                    <connections>
+                        <outlet property="pageVCContainerView" destination="eKS-ZL-xBA" id="5x3-NQ-bw7"/>
+                        <outlet property="pageVCPageControl" destination="sbK-MI-tC8" id="YhS-xI-eJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLB-yu-yrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
