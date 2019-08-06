@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WeatherViewController: UIViewController {
 
     //MARK: - Properties
     //MARK: IBOutlet
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension WeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
@@ -50,5 +50,5 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension WeatherViewController: UITableViewDelegate {
 }
