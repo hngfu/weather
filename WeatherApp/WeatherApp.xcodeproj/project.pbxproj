@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D02CD7822F97B290091E01A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02CD7722F97B290091E01A /* WeatherManager.swift */; };
 		7D1689A722F7DB49008287FF /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1689A522F7DB49008287FF /* Search.storyboard */; };
 		7D1689AD22F7E3B5008287FF /* LocalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */; };
 		7D1689AE22F7E3B5008287FF /* LocalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D02CD7722F97B290091E01A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		7D1689A622F7DB49008287FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WeatherApp/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		7D1689AB22F7E3B5008287FF /* LocalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTableViewCell.swift; sourceTree = "<group>"; };
 		7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalTableViewCell.xib; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				7DEE526322F5779A005C802A /* AppDelegate.swift */,
 				7DEE526722F5779A005C802A /* Main.storyboard */,
 				7DEE526522F5779A005C802A /* WeatherViewController.swift */,
+				7D02CD7722F97B290091E01A /* WeatherManager.swift */,
 				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
 				7DDA9DF522F965F000D3222E /* Coordinate.swift */,
 				7D16897D22F7D51D008287FF /* Search */,
@@ -199,6 +202,7 @@
 				7DDA9DF622F965F000D3222E /* Coordinate.swift in Sources */,
 				7DEE526622F5779A005C802A /* WeatherViewController.swift in Sources */,
 				7DDA9DD022F8458F00D3222E /* GradientView.swift in Sources */,
+				7D02CD7822F97B290091E01A /* WeatherManager.swift in Sources */,
 				7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */,
 				7D1689AD22F7E3B5008287FF /* LocalTableViewCell.swift in Sources */,
 			);
