@@ -150,6 +150,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7D372EE722F9D8A300988C8D /* DetailWeather */ = {
+			isa = PBXGroup;
+			children = (
+				7D372EE122F9C9A800988C8D /* DetailWeather.storyboard */,
+				7D372EE922F9D8C800988C8D /* Views */,
+				7D372EE822F9D8B200988C8D /* Controllers */,
+			);
+			path = DetailWeather;
+			sourceTree = "<group>";
+		};
+		7D372EE822F9D8B200988C8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D372EE522F9D83C00988C8D /* DetailWeatherViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D372EE922F9D8C800988C8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D372EE322F9D64700988C8D /* SmallDotPageControl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7DEE525722F5779A005C802A = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +195,11 @@
 		7DEE526222F5779A005C802A /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				7D372EE122F9C9A800988C8D /* DetailWeather.storyboard */,
-				7D372EE322F9D64700988C8D /* SmallDotPageControl.swift */,
-				7D372EE522F9D83C00988C8D /* DetailWeatherViewController.swift */,
 				7DEE526322F5779A005C802A /* AppDelegate.swift */,
 				7DDA9DF522F965F000D3222E /* Coordinate.swift */,
 				7D19C86A22F97E3E002DBF23 /* LocalInfo.swift */,
 				7D19C87122F98562002DBF23 /* NetworkManager.swift */,
+				7D372EE722F9D8A300988C8D /* DetailWeather */,
 				7D19C87722F997FB002DBF23 /* Weather */,
 				7D16897D22F7D51D008287FF /* Search */,
 				7DEE526A22F5779B005C802A /* Assets.xcassets */,
