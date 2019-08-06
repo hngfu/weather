@@ -33,7 +33,8 @@ class WeatherViewController: UIViewController {
 
     @IBAction func unwindToWeatherViewController(_ segue: UIStoryboardSegue) {
         guard let sourceViewController = segue.source as? SearchViewController,
-            let coordinate = sourceViewController.selectedLocationCoordinate else { return }
+            let localInfo = sourceViewController.selectedLocalInfo else { return }
+        print(localInfo)
         //TODO: 받은 좌표로 구현하기
     }
 }

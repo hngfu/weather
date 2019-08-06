@@ -15,9 +15,10 @@ class LocalManager {
     private var mapItems = [MKMapItem]()
     
     //MARK: - Methods
-    subscript(index: Int) -> Coordinate? {
-        guard (0..<mapItems.count) ~= index else { return nil }
-        return mapItems[index].coordinate
+    subscript(index: Int) -> LocalInfo? {
+        guard (0..<mapItems.count) ~= index,
+            let localInfo = mapItems[index].localInfo else { return nil }
+        return localInfo
     }
     
     func count() -> Int {
@@ -47,8 +48,10 @@ extension Notification.Name {
 }
 
 extension MKMapItem {
-    var coordinate: Coordinate {
-        return Coordinate(latitude: Float(self.placemark.coordinate.latitude),
-                          longitude: Float(self.placemark.coordinate.longitude))
+    var localInfo: LocalInfo? {
+        guard let name = self.name else { return nil }
+        let coordinate =  Coordinate(latitude: Float(self.placemark.coordinate.latitude),
+                                     longitude: Float(self.placemark.coordinate.longitude))
+        return LocalInfo(name: name, coordinate: coordinate)
     }
 }
