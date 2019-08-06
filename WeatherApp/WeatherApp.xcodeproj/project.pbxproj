@@ -98,6 +98,43 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		7D19C87722F997FB002DBF23 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE526722F5779A005C802A /* Main.storyboard */,
+				7D19C87822F9980B002DBF23 /* Controllers */,
+				7D19C87A22F99823002DBF23 /* Models */,
+				7D19C87922F99815002DBF23 /* Views */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		7D19C87822F9980B002DBF23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE526522F5779A005C802A /* WeatherViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D19C87922F99815002DBF23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D19C87A22F99823002DBF23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D02CD7722F97B290091E01A /* SimpleWeatherManager.swift */,
+				7D19C87322F98CC8002DBF23 /* Weather.swift */,
+				7D19C87522F996A3002DBF23 /* LocalWeather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7DEE525722F5779A005C802A = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				7DEE526322F5779A005C802A /* AppDelegate.swift */,
-				7DEE526722F5779A005C802A /* Main.storyboard */,
-				7DEE526522F5779A005C802A /* WeatherViewController.swift */,
-				7D02CD7722F97B290091E01A /* SimpleWeatherManager.swift */,
-				7D19C87322F98CC8002DBF23 /* Weather.swift */,
-				7D19C87522F996A3002DBF23 /* LocalWeather.swift */,
-				7D19C87122F98562002DBF23 /* NetworkManager.swift */,
-				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
 				7DDA9DF522F965F000D3222E /* Coordinate.swift */,
 				7D19C86A22F97E3E002DBF23 /* LocalInfo.swift */,
+				7D19C87122F98562002DBF23 /* NetworkManager.swift */,
+				7D19C87722F997FB002DBF23 /* Weather */,
 				7D16897D22F7D51D008287FF /* Search */,
 				7DEE526A22F5779B005C802A /* Assets.xcassets */,
 				7DEE526C22F5779B005C802A /* LaunchScreen.storyboard */,
