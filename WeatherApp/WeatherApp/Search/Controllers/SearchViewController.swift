@@ -17,6 +17,8 @@ class SearchViewController: UIViewController {
     //MARK: Model
     private let localManager = LocalManager()
     
+    var selectedLocationCoordinate: Coordinate?
+    
     //MARK: - Methods
     //MARK: Initialization
     override func viewDidLoad() {
@@ -72,5 +74,10 @@ extension SearchViewController: UITableViewDataSource {
 }
 
 extension SearchViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let coordinate = localManager[indexPath.row] else { return }
+        self.selectedLocationCoordinate = coordinate
+        self.navigationItem.titleView?.resignFirstResponder()
+        performSegue(withIdentifier: "unwindSegueToWeatherVC", sender: self)
+    }
 }
