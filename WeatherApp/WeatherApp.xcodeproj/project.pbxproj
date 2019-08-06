@@ -13,6 +13,7 @@
 		7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */; };
 		7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9B22F71C4000EA9F53 /* LocalManager.swift */; };
 		7DDA9DD022F8458F00D3222E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA9DCF22F8458F00D3222E /* GradientView.swift */; };
+		7DDA9DF622F965F000D3222E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA9DF522F965F000D3222E /* Coordinate.swift */; };
 		7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE526322F5779A005C802A /* AppDelegate.swift */; };
 		7DEE526622F5779A005C802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE526522F5779A005C802A /* ViewController.swift */; };
 		7DEE526922F5779A005C802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEE526722F5779A005C802A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchBar.swift; sourceTree = "<group>"; };
 		7D537E9B22F71C4000EA9F53 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 		7DDA9DCF22F8458F00D3222E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		7DDA9DF522F965F000D3222E /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		7DEE526022F5779A005C802A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEE526322F5779A005C802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DEE526522F5779A005C802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				7DEE526722F5779A005C802A /* Main.storyboard */,
 				7DEE526522F5779A005C802A /* ViewController.swift */,
 				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
+				7DDA9DF522F965F000D3222E /* Coordinate.swift */,
 				7D16897D22F7D51D008287FF /* Search */,
 				7DEE526A22F5779B005C802A /* Assets.xcassets */,
 				7DEE526C22F5779B005C802A /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */,
 				7DEE527622F5C0B4005C802A /* SearchViewController.swift in Sources */,
 				7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */,
+				7DDA9DF622F965F000D3222E /* Coordinate.swift in Sources */,
 				7DEE526622F5779A005C802A /* ViewController.swift in Sources */,
 				7DDA9DD022F8458F00D3222E /* GradientView.swift in Sources */,
 				7DEE526422F5779A005C802A /* AppDelegate.swift in Sources */,
