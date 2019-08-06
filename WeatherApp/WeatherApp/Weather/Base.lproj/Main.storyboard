@@ -81,6 +81,7 @@
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hngfu" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-ER-dBx">
                                             <rect key="frame" x="187" y="59" width="40" height="23"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Rfb-ER-dBx" secondAttribute="height" multiplier="19:11" id="e2u-w5-vFM"/>
                                                 <constraint firstAttribute="width" constant="40" id="qpy-3K-0Z8"/>
@@ -122,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="weatherTableView" destination="5za-Y1-CUl" id="qmH-sV-TMM"/>
+                        <segue destination="zsf-ea-5y1" kind="show" id="GHK-Hk-Vww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,7 +136,15 @@
                 <viewControllerPlaceholder storyboardName="Search" id="Oic-Mo-83g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqh-z2-CcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="12"/>
+            <point key="canvasLocation" x="1191" y="222"/>
+        </scene>
+        <!--DetailWeather-->
+        <scene sceneID="SdI-92-Ure">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailWeather" id="zsf-ea-5y1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQx-1L-QZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="-200"/>
         </scene>
     </scenes>
     <resources>
