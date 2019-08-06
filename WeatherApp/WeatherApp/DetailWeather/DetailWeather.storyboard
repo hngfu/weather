@@ -75,11 +75,11 @@
             </objects>
             <point key="canvasLocation" x="3510" y="-324"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Detail Weather Page View Controller-->
         <scene sceneID="RLO-Us-J30">
             <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="xxF-UF-kTK" customClass="DetailWeatherPageViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhD-Lv-1GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="xxF-UF-kTK" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="4422" y="-324"/>
         </scene>
