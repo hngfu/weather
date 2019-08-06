@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     @IBAction func touchUpAddButton(_ sender: UIButton) {
         sender.isSelected.toggle()
     }
+
+    @IBAction func unwindToWeatherViewController(_ segue: UIStoryboardSegue) {
+        guard let sourceViewController = segue.source as? SearchViewController,
+            let coordinate = sourceViewController.selectedLocationCoordinate else { return }
+        //TODO: 받은 좌표로 구현하기
+    }
 }
 
 extension ViewController: UITableViewDataSource {
