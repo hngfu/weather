@@ -38,9 +38,11 @@
                     <navigationItem key="navigationItem" prompt="도시, 우편번호 또는 공항 위치 입력" id="bfz-TC-5Lf"/>
                     <connections>
                         <outlet property="localTableView" destination="BMK-tg-bOE" id="AXA-mu-kYI"/>
+                        <segue destination="NR8-zY-Xjs" kind="unwind" identifier="unwindSegueToWeatherVC" unwindAction="unwindToWeatherViewController:" id="1Av-Ci-RHP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0N5-gx-euG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NR8-zY-Xjs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1903" y="20"/>
         </scene>
