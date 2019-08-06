@@ -14,7 +14,12 @@ class SimpleWeatherManager {
     
     private let weatherURL = "https://api.darksky.net/forecast/"
     private let apiKey = "51e22ec0db359cffd84730e7d9db9c06/"
-    private let option = "?lang=ko&exclude=[minutely,hourly,daily,alerts,flags]"
+    private let option = "?lang=ko&exclude=[minutely,hourly,daily,alerts,flags]&units=si"
+    
+    subscript(index: Int) -> LocalWeather? {
+        guard (0..<localWeather.count) ~= index else { return nil }
+        return localWeather[index]
+    }
     
     func appendWeather(with localInfo: LocalInfo) {
         let coordinate = localInfo.coordinate
@@ -26,6 +31,16 @@ class SimpleWeatherManager {
                                                     from: data) else { return }
             let localWeather = LocalWeather(localInfo: localInfo, weather: weather)
             self.localWeather.append(localWeather)
+            NotificationCenter.default.post(name: .localWeatherDidAppended,
+                                            object: self)
         }
     }
+    
+    func count() -> Int {
+        return localWeather.count
+    }
+}
+
+extension Notification.Name {
+    static let localWeatherDidAppended = NSNotification.Name("localWeatherDidAppended")
 }

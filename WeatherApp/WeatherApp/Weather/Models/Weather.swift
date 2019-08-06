@@ -12,7 +12,8 @@ struct Weather: Decodable {
     let currently: DetailInfo
     
     struct DetailInfo: Decodable {
-        let time: UInt32
+        let time: Double
         let temperature: Float
+        let icon: String
     }
 }
