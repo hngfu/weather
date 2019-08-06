@@ -1,5 +1,5 @@
 //
-//  WeatherManager.swift
+//  LocalWeather.swift
 //  WeatherApp
 //
 //  Created by 조재흥 on 06/08/2019.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-class WeatherManager {
-    
+struct LocalWeather {
+    let localInfo: LocalInfo
+    let weather: Weather
 }
