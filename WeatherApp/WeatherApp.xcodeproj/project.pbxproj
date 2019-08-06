@@ -15,6 +15,9 @@
 		7D19C87222F98562002DBF23 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87122F98562002DBF23 /* NetworkManager.swift */; };
 		7D19C87422F98CC8002DBF23 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87322F98CC8002DBF23 /* Weather.swift */; };
 		7D19C87622F996A3002DBF23 /* LocalWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87522F996A3002DBF23 /* LocalWeather.swift */; };
+		7D19C87D22F99875002DBF23 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87B22F99875002DBF23 /* WeatherTableViewCell.swift */; };
+		7D19C87E22F99875002DBF23 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D19C87C22F99875002DBF23 /* WeatherTableViewCell.xib */; };
+		7D19C88222F9A7B9002DBF23 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C88122F9A7B9002DBF23 /* ShadowLabel.swift */; };
 		7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */; };
 		7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D537E9B22F71C4000EA9F53 /* LocalManager.swift */; };
 		7DDA9DD022F8458F00D3222E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA9DCF22F8458F00D3222E /* GradientView.swift */; };
@@ -36,6 +39,9 @@
 		7D19C87122F98562002DBF23 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7D19C87322F98CC8002DBF23 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		7D19C87522F996A3002DBF23 /* LocalWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeather.swift; sourceTree = "<group>"; };
+		7D19C87B22F99875002DBF23 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		7D19C87C22F99875002DBF23 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		7D19C88122F9A7B9002DBF23 /* ShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
 		7D537E9922F718BA00EA9F53 /* LocalSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchBar.swift; sourceTree = "<group>"; };
 		7D537E9B22F71C4000EA9F53 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 		7DDA9DCF22F8458F00D3222E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				7DDA9DCF22F8458F00D3222E /* GradientView.swift */,
+				7D19C87B22F99875002DBF23 /* WeatherTableViewCell.swift */,
+				7D19C87C22F99875002DBF23 /* WeatherTableViewCell.xib */,
+				7D19C88122F9A7B9002DBF23 /* ShadowLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 				7DEE526B22F5779B005C802A /* Assets.xcassets in Resources */,
 				7D1689AE22F7E3B5008287FF /* LocalTableViewCell.xib in Resources */,
 				7D1689A722F7DB49008287FF /* Search.storyboard in Resources */,
+				7D19C87E22F99875002DBF23 /* WeatherTableViewCell.xib in Resources */,
 				7DEE526922F5779A005C802A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +252,10 @@
 			files = (
 				7D19C87622F996A3002DBF23 /* LocalWeather.swift in Sources */,
 				7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */,
+				7D19C87D22F99875002DBF23 /* WeatherTableViewCell.swift in Sources */,
 				7DEE527622F5C0B4005C802A /* SearchViewController.swift in Sources */,
 				7D537E9C22F71C4000EA9F53 /* LocalManager.swift in Sources */,
+				7D19C88222F9A7B9002DBF23 /* ShadowLabel.swift in Sources */,
 				7D19C87222F98562002DBF23 /* NetworkManager.swift in Sources */,
 				7DDA9DF622F965F000D3222E /* Coordinate.swift in Sources */,
 				7D19C87422F98CC8002DBF23 /* Weather.swift in Sources */,
@@ -409,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZW6GB7MS9;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,6 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZW6GB7MS9;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
