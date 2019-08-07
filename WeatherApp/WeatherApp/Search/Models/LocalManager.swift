@@ -15,12 +15,6 @@ class LocalManager {
     private var mapItems = [MKMapItem]()
     
     //MARK: - Methods
-    subscript(index: Int) -> LocalInfo? {
-        guard (0..<mapItems.count) ~= index,
-            let localInfo = mapItems[index].localInfo else { return nil }
-        return localInfo
-    }
-    
     func count() -> Int {
         return mapItems.count
     }
@@ -40,6 +34,12 @@ class LocalManager {
             self.mapItems = response.mapItems
             NotificationCenter.default.post(name: .mapItemDidChanged, object: self)
         }
+    }
+    
+    func localInfo(at index: Int) -> LocalInfo? {
+        guard (0..<mapItems.count) ~= index,
+            let localInfo = mapItems[index].localInfo else { return nil }
+        return localInfo
     }
 }
 
