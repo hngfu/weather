@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Weather: Decodable {
-    let currently: DetailInfo
+struct SimpleWeather: Decodable {
+    let currently: Currently
     
-    struct DetailInfo: Decodable {
+    struct Currently: Decodable {
         let time: Double
         let temperature: Float
         let icon: String

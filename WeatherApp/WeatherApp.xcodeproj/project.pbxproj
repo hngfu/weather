@@ -13,8 +13,7 @@
 		7D1689AE22F7E3B5008287FF /* LocalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */; };
 		7D19C86B22F97E3E002DBF23 /* LocalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C86A22F97E3E002DBF23 /* LocalInfo.swift */; };
 		7D19C87222F98562002DBF23 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87122F98562002DBF23 /* NetworkManager.swift */; };
-		7D19C87422F98CC8002DBF23 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87322F98CC8002DBF23 /* Weather.swift */; };
-		7D19C87622F996A3002DBF23 /* LocalWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87522F996A3002DBF23 /* LocalWeather.swift */; };
+		7D19C87422F98CC8002DBF23 /* SimpleWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87322F98CC8002DBF23 /* SimpleWeather.swift */; };
 		7D19C87D22F99875002DBF23 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C87B22F99875002DBF23 /* WeatherTableViewCell.swift */; };
 		7D19C87E22F99875002DBF23 /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D19C87C22F99875002DBF23 /* WeatherTableViewCell.xib */; };
 		7D19C88222F9A7B9002DBF23 /* ShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19C88122F9A7B9002DBF23 /* ShadowLabel.swift */; };
@@ -42,8 +41,7 @@
 		7D1689AC22F7E3B5008287FF /* LocalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalTableViewCell.xib; sourceTree = "<group>"; };
 		7D19C86A22F97E3E002DBF23 /* LocalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInfo.swift; sourceTree = "<group>"; };
 		7D19C87122F98562002DBF23 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7D19C87322F98CC8002DBF23 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		7D19C87522F996A3002DBF23 /* LocalWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeather.swift; sourceTree = "<group>"; };
+		7D19C87322F98CC8002DBF23 /* SimpleWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeather.swift; sourceTree = "<group>"; };
 		7D19C87B22F99875002DBF23 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		7D19C87C22F99875002DBF23 /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		7D19C88122F9A7B9002DBF23 /* ShadowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLabel.swift; sourceTree = "<group>"; };
@@ -148,8 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				7D02CD7722F97B290091E01A /* SimpleWeatherManager.swift */,
-				7D19C87322F98CC8002DBF23 /* Weather.swift */,
-				7D19C87522F996A3002DBF23 /* LocalWeather.swift */,
+				7D19C87322F98CC8002DBF23 /* SimpleWeather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				7D372EE122F9C9A800988C8D /* DetailWeather.storyboard */,
-				7D372EE922F9D8C800988C8D /* Views */,
 				7D372EE822F9D8B200988C8D /* Controllers */,
+				7D372EE922F9D8C800988C8D /* Views */,
 			);
 			path = DetailWeather;
 			sourceTree = "<group>";
@@ -290,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D19C87622F996A3002DBF23 /* LocalWeather.swift in Sources */,
 				7D537E9A22F718BA00EA9F53 /* LocalSearchBar.swift in Sources */,
 				7D372EE422F9D64700988C8D /* SmallDotPageControl.swift in Sources */,
 				7D19C87D22F99875002DBF23 /* WeatherTableViewCell.swift in Sources */,
@@ -301,7 +297,7 @@
 				7D19C87222F98562002DBF23 /* NetworkManager.swift in Sources */,
 				7DDA9DF622F965F000D3222E /* Coordinate.swift in Sources */,
 				7D372EEB22F9D94200988C8D /* DetailWeatherPageViewController.swift in Sources */,
-				7D19C87422F98CC8002DBF23 /* Weather.swift in Sources */,
+				7D19C87422F98CC8002DBF23 /* SimpleWeather.swift in Sources */,
 				7DEE526622F5779A005C802A /* WeatherViewController.swift in Sources */,
 				7DDA9DD022F8458F00D3222E /* GradientView.swift in Sources */,
 				7D02CD7822F97B290091E01A /* SimpleWeatherManager.swift in Sources */,
