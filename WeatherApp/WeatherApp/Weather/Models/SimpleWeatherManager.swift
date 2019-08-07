@@ -35,6 +35,12 @@ class SimpleWeatherManager {
         networkManager.fetch(with: requestURL, successHandler: successHandler)
     }
     
+    func appendWeathers(with localInformations: [LocalInfo]) {
+        for localInfo in localInformations {
+            appendWeather(with: localInfo)
+        }
+    }
+    
     func count() -> Int {
         return simpleWeathers.count
     }

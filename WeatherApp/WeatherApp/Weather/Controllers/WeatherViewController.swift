@@ -31,16 +31,16 @@ class WeatherViewController: UIViewController {
         weatherTableView.delegate = self
         
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(insertRow),
+                                               selector: #selector(reloadTableView),
                                                name: .simpleWeatherDidAppended,
                                                object: weatherManager)
+        let localInformations = Preference.shared.locals
+        weatherManager.appendWeathers(with: localInformations)
     }
     
-    @objc func insertRow(_ noti: Notification) {
+    @objc func reloadTableView(_ noti: Notification) {
         DispatchQueue.main.async {
-            let addedRow = self.weatherManager.count() - 1
-            self.weatherTableView.insertRows(at: [IndexPath(row: addedRow, section: 0)],
-                                             with: .automatic)
+            self.weatherTableView.reloadData()
         }
     }
     
