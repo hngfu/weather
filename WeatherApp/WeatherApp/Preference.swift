@@ -13,8 +13,18 @@ class Preference: Codable {
     static var shared = Preference()
     
     var locals = [LocalInfo]()
+    var isCelsius = true {
+        didSet {
+            NotificationCenter.default.post(name: .temperatureUnitDidChanged, object: self)
+        }
+    }
     
     func replaceProperty(_ preference: Preference) {
         self.locals = preference.locals
+        self.isCelsius = preference.isCelsius
     }
+}
+
+extension Notification.Name {
+    static let temperatureUnitDidChanged = NSNotification.Name("teperatureUnitDidChanged")
 }

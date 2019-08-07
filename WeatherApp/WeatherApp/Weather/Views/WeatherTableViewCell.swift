@@ -29,11 +29,20 @@ class WeatherTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(changeTemperatureUnit),
+                                               name: .temperatureUnitDidChanged,
+                                               object: Preference.shared)
+        isCelsius = Preference.shared.isCelsius
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    @objc func changeTemperatureUnit(_ noti: Notification) {
+        self.isCelsius = Preference.shared.isCelsius
     }
     
     func showWith(localName: String, time: Double, celsius: Float, weatherIconName: String) {

@@ -122,6 +122,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="temperatureUnitButton" destination="eMu-6J-Ovn" id="VmD-Lb-9cZ"/>
                         <outlet property="weatherTableView" destination="5za-Y1-CUl" id="qmH-sV-TMM"/>
                         <segue destination="zsf-ea-5y1" kind="show" identifier="segueToDetailWeatherVC" id="GHK-Hk-Vww"/>
                     </connections>

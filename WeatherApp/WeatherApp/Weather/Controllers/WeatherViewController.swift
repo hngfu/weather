@@ -13,6 +13,7 @@ class WeatherViewController: UIViewController {
     //MARK: - Properties
     //MARK: IBOutlet
     @IBOutlet weak var weatherTableView: UITableView!
+    @IBOutlet weak var temperatureUnitButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -34,8 +35,10 @@ class WeatherViewController: UIViewController {
                                                selector: #selector(reloadTableView),
                                                name: .simpleWeatherDidAppended,
                                                object: weatherManager)
+        
         let localInformations = Preference.shared.locals
         weatherManager.appendWeathers(with: localInformations)
+        temperatureUnitButton.isSelected = !Preference.shared.isCelsius
     }
     
     @objc func reloadTableView(_ noti: Notification) {
@@ -47,10 +50,7 @@ class WeatherViewController: UIViewController {
     //MARK: IBAction
     @IBAction func touchUpAddButton(_ sender: UIButton) {
         sender.isSelected.toggle()
-        for cell in weatherTableView.visibleCells {
-            guard let cell = cell as? WeatherTableViewCell else { continue }
-            cell.isCelsius = !sender.isSelected
-        }
+        Preference.shared.isCelsius = !sender.isSelected
     }
 
     @IBAction func unwindToWeatherViewController(_ segue: UIStoryboardSegue) {
