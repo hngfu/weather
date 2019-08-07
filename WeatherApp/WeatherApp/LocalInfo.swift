@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LocalInfo {
+struct LocalInfo: Codable {
     let name: String
     let coordinate: Coordinate
 }
