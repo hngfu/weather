@@ -16,9 +16,7 @@ class SearchViewController: UIViewController {
     
     //MARK: Model
     private let localManager = LocalManager()
-    
-    var selectedLocalInfo: LocalInfo?
-    
+
     //MARK: - Methods
     //MARK: Initialization
     override func viewDidLoad() {
@@ -77,7 +75,8 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedLocalInfo = localManager[indexPath.row]
+        guard let localInfo = localManager.localInfo(at: indexPath.row) else { return }
+        Preference.shared.locals.append(localInfo)
         self.navigationItem.titleView?.resignFirstResponder()
         performSegue(withIdentifier: "unwindSegueToWeatherVC", sender: self)
     }

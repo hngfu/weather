@@ -32,14 +32,14 @@ class WeatherViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(insertRow),
-                                               name: .localWeatherDidAppended,
+                                               name: .simpleWeatherDidAppended,
                                                object: weatherManager)
     }
     
     @objc func insertRow(_ noti: Notification) {
         DispatchQueue.main.async {
-            let row = self.weatherManager.count() - 1
-            self.weatherTableView.insertRows(at: [IndexPath(row: row, section: 0)],
+            let addedRow = self.weatherManager.count() - 1
+            self.weatherTableView.insertRows(at: [IndexPath(row: addedRow, section: 0)],
                                              with: .automatic)
         }
     }
@@ -54,9 +54,9 @@ class WeatherViewController: UIViewController {
     }
 
     @IBAction func unwindToWeatherViewController(_ segue: UIStoryboardSegue) {
-        guard let sourceViewController = segue.source as? SearchViewController,
-            let localInfo = sourceViewController.selectedLocalInfo else { return }
-        weatherManager.appendWeather(with: localInfo)
+        guard segue.source is SearchViewController,
+            let addedLocalInfo = Preference.shared.locals.last else { return }
+        weatherManager.appendWeather(with: addedLocalInfo)
     }
 }
 
@@ -69,8 +69,11 @@ extension WeatherViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: WeatherTableViewCell.identifier,
                                                  for: indexPath)
         guard let weatherTableViewCell = cell as? WeatherTableViewCell,
-            let localWeather = weatherManager[indexPath.row] else { return cell }
-        weatherTableViewCell.show(with: localWeather)
+            let simpleWeather = weatherManager[indexPath.row] else { return cell }
+        weatherTableViewCell.showWith(localName: Preference.shared.locals[indexPath.row].name,
+                                      time: simpleWeather.currently.time,
+                                      celsius: simpleWeather.currently.temperature,
+                                      weatherIconName: simpleWeather.currently.icon)
         return weatherTableViewCell
     }
 }

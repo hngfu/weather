@@ -9,38 +9,37 @@
 import Foundation
 
 class SimpleWeatherManager {
-    private var localWeather = [LocalWeather]()
+    private var simpleWeathers = [SimpleWeather]()
     private let networkManager = NetworkManager()
     
     private let weatherURL = "https://api.darksky.net/forecast/"
     private let apiKey = "51e22ec0db359cffd84730e7d9db9c06/"
     private let option = "?lang=ko&exclude=[minutely,hourly,daily,alerts,flags]&units=si"
     
-    subscript(index: Int) -> LocalWeather? {
-        guard (0..<localWeather.count) ~= index else { return nil }
-        return localWeather[index]
+    subscript(index: Int) -> SimpleWeather? {
+        guard (0..<simpleWeathers.count) ~= index else { return nil }
+        return simpleWeathers[index]
     }
     
     func appendWeather(with localInfo: LocalInfo) {
         let coordinate = localInfo.coordinate
         let url = "\(weatherURL)\(apiKey)\(coordinate.latitude),\(coordinate.longitude)\(option)"
         guard let requestURL = URL(string: url) else { return }
-        networkManager.fetch(with: requestURL) { (data) in
+        let successHandler = { (data: Data) -> Void in
             let decoder = JSONDecoder()
-            guard let weather = try? decoder.decode(Weather.self,
-                                                    from: data) else { return }
-            let localWeather = LocalWeather(localInfo: localInfo, weather: weather)
-            self.localWeather.append(localWeather)
-            NotificationCenter.default.post(name: .localWeatherDidAppended,
+            guard let simpleWeather = try? decoder.decode(SimpleWeather.self, from: data) else { return }
+            self.simpleWeathers.append(simpleWeather)
+            NotificationCenter.default.post(name: .simpleWeatherDidAppended,
                                             object: self)
         }
+        networkManager.fetch(with: requestURL, successHandler: successHandler)
     }
     
     func count() -> Int {
-        return localWeather.count
+        return simpleWeathers.count
     }
 }
 
 extension Notification.Name {
-    static let localWeatherDidAppended = NSNotification.Name("localWeatherDidAppended")
+    static let simpleWeatherDidAppended = NSNotification.Name("simpleWeatherDidAppended")
 }

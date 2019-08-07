@@ -36,14 +36,13 @@ class WeatherTableViewCell: UITableViewCell {
 
     }
     
-    func show(with localWeather: LocalWeather) {
-        let weather = localWeather.weather.currently
-        weatherImageView.image = UIImage(named: "\(weather.icon)-image")
-        let date = Date(timeIntervalSince1970: weather.time)
-        timeLabel.text = date.timeText
-        localNameLabel.text = localWeather.localInfo.name
-        celsiusLabel.text = "\(UInt(weather.temperature))°"
-        fahrenheitLabel.text = "\(UInt(weather.temperature.fahrenheit))°"
+    func showWith(localName: String, time: Double, celsius: Float, weatherIconName: String) {
+        self.localNameLabel.text = localName
+        let date = Date(timeIntervalSince1970: time)
+        self.timeLabel.text = date.timeText
+        self.celsiusLabel.text = "\(UInt(celsius))°"
+        self.fahrenheitLabel.text = "\(UInt(celsius.fahrenheit))°"
+        self.weatherImageView.image = UIImage(named: "\(weatherIconName)-image")
     }
 }
 
