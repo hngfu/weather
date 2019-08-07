@@ -43,7 +43,9 @@ class SearchViewController: UIViewController {
     }
     
     @objc private func reloadTableView(_ noti: Notification) {
-        self.localTableView.reloadData()
+        DispatchQueue.main.async {
+            self.localTableView.reloadData()
+        }
     }
 }
 
